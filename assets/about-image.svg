@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="100%" height="100%">
+  <!-- Background Canvas -->
+  <rect width="500" height="650" fill="#E8D8CE" opacity="0.4"/>
+
+  <!-- Border Frame -->
+  <rect x="25" y="25" width="450" height="600" fill="none" stroke="#3B2F2A" stroke-width="1" opacity="0.3"/>
+
+  <!-- Large circle accent -->
+  <circle cx="250" cy="300" r="160" fill="#B98F88" opacity="0.5"/>
+
+  <!-- Intersecting arch element -->
+  <path d="M 120 480 A 130 130 0 0 1 380 480 Z" fill="#FBF7F4" opacity="0.9" stroke="#3B2F2A" stroke-width="1.5"/>
+
+  <!-- Botanical Lines (Stylized Eucalyptus or Willow branch) -->
+  <path d="M 250 500 C 250 350 200 250 280 150" fill="none" stroke="#3B2F2A" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Leaves along the branch -->
+  <circle cx="218" cy="380" r="14" fill="#3B2F2A" opacity="0.8"/>
+  <path d="M 218 380 Q 190 390 195 410 Q 220 405 218 380 Z" fill="#3B2F2A" opacity="0.8"/>
+
+  <circle cx="265" cy="320" r="16" fill="#3B2F2A" opacity="0.8"/>
+  <path d="M 265 320 Q 295 310 290 290 Q 260 300 265 320 Z" fill="#3B2F2A" opacity="0.8"/>
+
+  <circle cx="220" cy="270" r="15" fill="#3B2F2A" opacity="0.8"/>
+  <path d="M 220 270 Q 190 260 200 240 Q 225 250 220 270 Z" fill="#3B2F2A" opacity="0.8"/>
+
+  <circle cx="270" cy="210" r="12" fill="#3B2F2A" opacity="0.8"/>
+  <path d="M 270 210 Q 295 200 290 180 Q 265 190 270 210 Z" fill="#3B2F2A" opacity="0.8"/>
+  
+  <path d="M 280 150 Q 280 120 270 125 Q 265 140 280 150 Z" fill="#3B2F2A" opacity="0.9"/>
+
+  <!-- Minimalist Geometric Accents -->
+  <!-- Thin vertical line -->
+  <line x1="250" y1="50" x2="250" y2="600" stroke="#3B2F2A" stroke-width="0.75" stroke-dasharray="4 6" opacity="0.5"/>
+  <!-- Thin horizontal line -->
+  <line x1="50" y1="300" x2="450" y2="300" stroke="#3B2F2A" stroke-width="0.75" stroke-dasharray="4 6" opacity="0.5"/>
+
+  <!-- 4-pointed stars (Sparkles) -->
+  <path d="M 120 150 Q 130 150 130 140 Q 130 150 140 150 Q 130 150 130 160 Q 130 150 120 150 Z" fill="#3B2F2A"/>
+  <path d="M 370 420 Q 380 420 380 410 Q 380 420 390 420 Q 380 420 380 430 Q 380 420 370 420 Z" fill="#3B2F2A" opacity="0.7"/>
+
+  <!-- Text elements -->
+  <text x="250" y="580" font-family="'Cormorant Garamond', serif" font-size="20" font-style="italic" fill="#3B2F2A" text-anchor="middle" letter-spacing="1">
+    K. Portfolio
+  </text>
+</svg>

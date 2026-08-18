@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <!-- Background Canvas -->
+  <rect width="600" height="400" fill="#FBF7F4"/>
+  
+  <!-- Browser Frame Wrapper -->
+  <rect x="20" y="20" width="560" height="360" rx="12" fill="#E8D8CE" opacity="0.3" stroke="#3B2F2A" stroke-width="1.5"/>
+  
+  <!-- Browser Header Bar -->
+  <line x1="20" y1="55" x2="580" y2="55" stroke="#3B2F2A" stroke-width="1.5"/>
+  <!-- Browser Buttons -->
+  <circle cx="45" cy="38" r="5" fill="#3B2F2A" opacity="0.8"/>
+  <circle cx="60" cy="38" r="5" fill="#3B2F2A" opacity="0.5"/>
+  <circle cx="75" cy="38" r="5" fill="#3B2F2A" opacity="0.3"/>
+  <!-- Web URL Mock -->
+  <rect x="110" y="28" width="380" height="20" rx="10" fill="#FBF7F4" opacity="0.8"/>
+  <text x="300" y="42" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.7" text-anchor="middle" letter-spacing="1">academic.edu/portfolio</text>
+
+  <!-- Abstract Code Tree Graphic -->
+  <!-- Main Root Node -->
+  <g transform="translate(60, 210)">
+    <rect width="100" height="30" rx="6" fill="#3B2F2A"/>
+    <text x="50" y="19" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#FBF7F4" text-anchor="middle" letter-spacing="0.5">app.js</text>
+  </g>
+  
+  <!-- Wires/Connectors -->
+  <path d="M 160 225 L 240 145" fill="none" stroke="#3B2F2A" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.8"/>
+  <path d="M 160 225 L 240 225" fill="none" stroke="#3B2F2A" stroke-width="1.5" opacity="0.8"/>
+  <path d="M 160 225 L 240 305" fill="none" stroke="#3B2F2A" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.8"/>
+
+  <!-- Leaf Node 1 (Top) -->
+  <g transform="translate(240, 130)">
+    <rect width="120" height="30" rx="6" fill="#B98F88" stroke="#3B2F2A" stroke-width="1.25"/>
+    <text x="60" y="19" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#3B2F2A" text-anchor="middle">router.js</text>
+  </g>
+  <path d="M 360 145 L 430 145" fill="none" stroke="#3B2F2A" stroke-width="1.5" opacity="0.8"/>
+  <g transform="translate(430, 130)">
+    <rect width="100" height="30" rx="6" fill="#FBF7F4" stroke="#3B2F2A" stroke-width="1"/>
+    <text x="50" y="18" font-family="'Inter', sans-serif" font-size="8" fill="#3B2F2A" text-anchor="middle">api.js</text>
+  </g>
+
+  <!-- Leaf Node 2 (Middle) -->
+  <g transform="translate(240, 210)">
+    <rect width="120" height="30" rx="6" fill="#E8D8CE" stroke="#3B2F2A" stroke-width="1.25"/>
+    <text x="60" y="19" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#3B2F2A" text-anchor="middle">controllers/</text>
+  </g>
+  <path d="M 360 225 L 430 225" fill="none" stroke="#3B2F2A" stroke-width="1.5" opacity="0.8"/>
+  <g transform="translate(430, 210)">
+    <rect width="100" height="30" rx="6" fill="#FBF7F4" stroke="#3B2F2A" stroke-width="1"/>
+    <text x="50" y="18" font-family="'Inter', sans-serif" font-size="8" fill="#3B2F2A" text-anchor="middle">userController.js</text>
+  </g>
+
+  <!-- Leaf Node 3 (Bottom) -->
+  <g transform="translate(240, 290)">
+    <rect width="120" height="30" rx="6" fill="#B98F88" opacity="0.5" stroke="#3B2F2A" stroke-width="1.25"/>
+    <text x="60" y="19" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#3B2F2A" text-anchor="middle">models/</text>
+  </g>
+  
+  <!-- Subtle Coding Symbols floating -->
+  <!-- Brackets -->
+  <text x="500" y="90" font-family="'Cormorant Garamond', serif" font-size="52" font-style="italic" fill="#3B2F2A" opacity="0.15">{ }</text>
+  <text x="80" y="120" font-family="'Cormorant Garamond', serif" font-size="42" font-style="italic" fill="#3B2F2A" opacity="0.15">&lt; /&gt;</text>
+  
+  <!-- Decorative star -->
+  <path d="M 500 310 Q 508 310 508 302 Q 508 310 516 310 Q 508 310 508 318 Q 508 310 500 310 Z" fill="#3B2F2A"/>
+</svg>

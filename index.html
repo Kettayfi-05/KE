@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khawla — Junior Web Developer &amp; Designer</title>
+  <meta name="description" content="Portfolio of Khawla, a Junior Web Developer &amp; Designer creating modern, responsive and user-focused websites with a strong attention to detail.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/kettayfi-05">
+  <meta property="og:title" content="Khawla — Junior Web Developer &amp; Designer">
+  <meta property="og:description" content="Portfolio of Khawla, a Junior Web Developer &amp; Designer creating modern, responsive and user-focused websites with a strong attention to detail.">
+  <meta property="og:image" content="assets/profile.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Khawla — Junior Web Developer &amp; Designer">
+  <meta property="twitter:description" content="Portfolio of Khawla, a Junior Web Developer &amp; Designer creating modern, responsive and user-focused websites.">
+  <meta property="twitter:image" content="assets/profile.png">
+
+  <!-- Fonts: Cormorant Garamond (Serif) & Inter (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- Initializing body in French mode -->
+<body class="lang-fr">
+
+  <!-- FIXED NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Monogram Logo -->
+      <a href="#home" class="nav-logo" aria-label="Khawla Homepage">KE</a>
+      
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" role="navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="#home" class="nav-link active">
+              <span data-lang="fr">ACCUEIL</span>
+              <span data-lang="en">HOME</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link">
+              <span data-lang="fr">À PROPOS</span>
+              <span data-lang="en">ABOUT</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link">
+              <span data-lang="fr">OUTILS</span>
+              <span data-lang="en">SKILLS</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link">
+              <span data-lang="fr">PROJETS</span>
+              <span data-lang="en">PROJECTS</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="nav-link">
+              <span data-lang="fr">SERVICES</span>
+              <span data-lang="en">SERVICES</span>
+            </a>
+          </li>
+          <li>
+            <a href="#process" class="nav-link">
+              <span data-lang="fr">MÉTHODE</span>
+              <span data-lang="en">PROCESS</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">
+              <span data-lang="fr">CONTACT</span>
+              <span data-lang="en">CONTACT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right Side Controls (Github, Lang Toggle & Mobile Toggle) -->
+      <div class="nav-actions">
+        <!-- Language Switcher Button -->
+        <button id="lang-toggle" class="lang-toggle-btn" aria-label="Changer de langue / Switch language">EN</button>
+
+        <a href="https://github.com/kettayfi-05" target="_blank" rel="noopener noreferrer" class="nav-github-link" aria-label="Visit my GitHub Profile">
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+        </a>
+        
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero scroll-reveal">
+      <div class="hero-container">
+        
+        <!-- Left Column: Copy & CTAs -->
+        <div class="hero-content">
+          <span class="hero-greeting" data-lang="fr">Bonjour, je suis</span>
+          <span class="hero-greeting" data-lang="en">Hello, I’m</span>
+          
+          <h1 class="hero-name">KHAWLA</h1>
+          
+          <span class="hero-subtitle" data-lang="fr">DÉVELOPPEUSE &amp; DESIGNER WEB JUNIOR</span>
+          <span class="hero-subtitle" data-lang="en">JUNIOR WEB DEVELOPER &amp; DESIGNER</span>
+          
+          <p class="hero-desc" data-lang="fr">
+            Je crée des sites web modernes, réactifs et centrés sur l'utilisateur avec une attention particulière aux détails.
+          </p>
+          <p class="hero-desc" data-lang="en">
+            I create modern, responsive and user-focused websites with a strong attention to detail.
+          </p>
+          
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              <span data-lang="fr">VOIR MES PROJETS &rarr;</span>
+              <span data-lang="en">VIEW MY WORK &rarr;</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span data-lang="fr">ME CONTACTER</span>
+              <span data-lang="en">GET IN TOUCH</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Arched Portrait & Decorative Items -->
+        <div class="hero-visual">
+          <div class="arched-frame-wrapper">
+            <div class="arched-frame">
+              <img src="assets/profile.png" alt="Khawla Portrait" class="profile-img">
+            </div>
+            
+            <!-- Floating Decorative Elements -->
+            <div class="decor-circle"></div>
+            <!-- Star SVG elements placed strategically -->
+            <svg class="decor-star star-1" viewBox="0 0 24 24" width="24" height="24" fill="var(--burgundy)">
+              <path d="M 0 12 Q 12 12 12 0 Q 12 12 24 12 Q 12 12 12 24 Q 12 12 0 12 Z"/>
+            </svg>
+            <svg class="decor-star star-2" viewBox="0 0 24 24" width="16" height="16" fill="var(--dusty-pink)">
+              <path d="M 0 8 Q 8 8 8 0 Q 8 8 16 8 Q 8 8 8 16 Q 8 8 0 8 Z"/>
+            </svg>
+            <span class="decor-text">CODE • DESIGN • CREATE</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HORIZONTAL PROFILE INFORMATION BAR -->
+    <div class="profile-info-bar scroll-reveal">
+      <div class="info-bar-container">
+        <div class="info-bar-item">
+          <span class="info-num">01</span>
+          <span class="info-label" data-lang="fr">DÉVELOPPEMENT WEB</span>
+          <span class="info-label" data-lang="en">WEB DEVELOPMENT</span>
+        </div>
+        <div class="info-bar-item">
+          <span class="info-num">02</span>
+          <span class="info-label" data-lang="fr">DESIGN RÉACTIF</span>
+          <span class="info-label" data-lang="en">RESPONSIVE DESIGN</span>
+        </div>
+        <div class="info-bar-item">
+          <span class="info-num">03</span>
+          <span class="info-label" data-lang="fr">TECHNOLOGIES MODERNES</span>
+          <span class="info-label" data-lang="en">MODERN TECHNOLOGIES</span>
+        </div>
+        <div class="info-bar-item">
+          <span class="info-num">04</span>
+          <span class="info-label" data-lang="fr">APPRENTISSAGE CONTINU</span>
+          <span class="info-label" data-lang="en">CONTINUOUS LEARNING</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME SECTION (INTERACTIVE BOOK INTERACTION) -->
+    <section id="about" class="about scroll-reveal">
+      <div class="about-container-book">
+        
+        <div class="about-header-book">
+          <span class="section-label" data-lang="fr">01 / QUI JE SUIS</span>
+          <span class="section-label" data-lang="en">01 / WHO I AM</span>
+          <h2 class="section-title" data-lang="fr">À PROPOS DE MOI</h2>
+          <h2 class="section-title" data-lang="en">ABOUT ME</h2>
+        </div>
+
+        <div class="about-book-container">
+          <div class="book" id="about-book" tabindex="0" role="button" aria-label="Ouvrir le livre à propos de moi / Open about me book">
+            
+            <!-- Book Cover -->
+            <div class="book-cover">
+              <div class="book-cover-front">
+                <div class="book-cover-artwork">
+                  <img src="assets/about-image.svg" alt="Abstract decoration">
+                </div>
+                <div class="book-cover-footer">
+                  <span data-lang="fr">CLIQUEZ POUR OUVRIR &rarr;</span>
+                  <span data-lang="en">CLICK TO OPEN &rarr;</span>
+                </div>
+              </div>
+              <div class="book-cover-back"></div>
+            </div>
+
+            <!-- Page 1 (Revealed on Left Side when opened) -->
+            <div class="book-page book-page-left">
+              <div class="page-content">
+                <span class="page-num">01</span>
+                <h4 class="page-brand">KE</h4>
+                <div class="page-decor-flower">
+                  <svg viewBox="0 0 100 100" width="90" height="90" fill="none" stroke="var(--burgundy)" stroke-width="1.5" opacity="0.6">
+                    <path d="M 50 100 C 50 65 35 45 50 20 C 65 45 50 65 50 100 M 50 60 C 35 55 25 45 35 35 C 45 45 50 60 50 60 M 50 50 C 65 45 75 35 65 25 C 55 35 50 50 50 50" stroke-linecap="round"/>
+                    <circle cx="50" cy="20" r="3.5" fill="var(--burgundy)"/>
+                  </svg>
+                </div>
+                <span class="page-subtitle" data-lang="fr">DÉVELOPPEUSE &amp; DESIGNER</span>
+                <span class="page-subtitle" data-lang="en">DEVELOPER &amp; DESIGNER</span>
+              </div>
+            </div>
+
+            <!-- Page 2 (Exposed on Right Side when opened) -->
+            <div class="book-page book-page-right">
+              <div class="page-content">
+                <span class="page-num">02</span>
+                <div class="bio-paragraphs">
+                  <h4 class="page-section-title" data-lang="fr">QUI JE SUIS</h4>
+                  <h4 class="page-section-title" data-lang="en">WHO I AM</h4>
+                  
+                  <p data-lang="fr">
+                    Je suis Khawla, développeuse web et étudiante en cycle ingénieur en informatique. Curieuse et créative, j’aime transformer des idées en expériences digitales simples et élégantes.
+                  </p>
+                  <p data-lang="en">
+                    I’m Khawla, a web developer and software engineering student. Curious and creative, I love transforming ideas into simple and elegant digital experiences.
+                  </p>
+                  
+                  <h4 class="page-section-title" data-lang="fr" style="margin-top: 1.2rem;">MON PARCOURS</h4>
+                  <h4 class="page-section-title" data-lang="en" style="margin-top: 1.2rem;">MY JOURNEY</h4>
+                  
+                  <p data-lang="fr">
+                    Après une formation en Développement Web , j’ai poursuivi mon parcours en cycle d'ingénieur .
+                    Au fil de mes projets et expériences, j’ai développé mes compétences en Laravel, Symfony, JavaScript, Python et SQL, html , css , Java Script  avec notamment une expérience au Groupe OCP.
+                  </p>
+                  <p data-lang="en">
+                    After training in Web Development, I continued my journey with a software engineering degree.
+                    Through my projects and experiences, I developed my skills in Laravel, Symfony, JavaScript, Python, SQL, HTML, CSS, and JavaScript, including a notable experience at OCP Group.
+                  </p>
+                  
+                  <p data-lang="fr" style="margin-top: 0.8rem;">
+                    Aujourd’hui, je continue d’apprendre, de créer et d’évoluer à travers chaque nouveau projet.
+                  </p>
+                  <p data-lang="en" style="margin-top: 0.8rem;">
+                    Today, I continue to learn, create, and evolve through each new project.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TOOLS & TECHNOLOGIES SECTION -->
+    <section id="skills" class="skills scroll-reveal">
+      <div class="skills-container">
+        <div class="skills-header">
+          <span class="section-label" data-lang="fr">02 / OUTILS DE TRAVAIL</span>
+          <span class="section-label" data-lang="en">02 / MY WORKBENCH</span>
+          
+          <h2 class="section-title" data-lang="fr">OUTILS &amp; TECHNOLOGIES</h2>
+          <h2 class="section-title" data-lang="en">TOOLS &amp; TECHNOLOGIES</h2>
+        </div>
+        <div class="skills-grid">
+          <!-- HTML5 -->
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="var(--burgundy)">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.03 8h-11.1l.24 2.68h10.62l-.715 8.01-5.575 1.585-5.59-1.585-.36-4.04h2.68l.18 2.02 3.09.87 3.09-.87.35-3.95H5.14l-.82-9.2h14.51l-.3 3.01z"/>
+              </svg>
+            </div>
+            <span class="skill-name">HTML5</span>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="var(--burgundy)">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.03 8H6.55l-.23-2.5h12.56l-.3-3H3.55l.8 9h11.1l-.31 3.5-3.14.88-3.14-.88-.2-2.25H3.97l.38 4.25 7.65 2.13 7.65-2.13.88-9.88z"/>
+              </svg>
+            </div>
+            <span class="skill-name">CSS3</span>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="var(--burgundy)">
+                <path d="M0 0h24v24H0V0zm22.034 18.5c-.085-1.278-.786-2.116-2.216-2.526-.853-.22-1.705-.33-2.557-.5-.768-.152-1.11-.477-1.11-1.042 0-.6.444-.958 1.212-.958.752 0 1.23.36 1.486 1.146.103.3.29.48.667.43.34-.05.513-.257.444-.65-.188-1.13-.99-1.986-2.427-2.14-.376-.04-.77-.03-1.146.04-.633.118-1.214.4-1.62.906-.633.787-.582 1.95.12 2.65.65.656 1.52.88 2.376 1.076.88.196 1.5.38 1.5 1.05 0 .736-.615 1.12-1.45 1.12-.924 0-1.574-.46-1.745-1.5-.07-.394-.274-.53-.615-.496-.325.03-.496.223-.46.59.22 1.402 1.145 2.223 2.77 2.223 2.053 0 2.872-1.11 2.872-2.513zm-10.22 2.5c0-.62-.162-1.12-.48-1.467-.3-.316-.76-.53-1.385-.65-.564-.103-1.13-.18-1.69-.274-.548-.1-.77-.325-.77-.736 0-.48.376-.736.99-.736.565 0 .96.24 1.11.753.086.3.265.43.59.394.308-.034.46-.222.393-.564-.17-.99-.872-1.59-2.07-1.71-.342-.033-.702-.025-1.044.026-.616.094-1.12.368-1.436.855-.547.787-.41 1.796.274 2.292.513.385 1.163.565 1.77.676.65.11 1.197.23 1.197.77 0 .548-.445.83-1.11.83-.753 0-1.23-.334-1.393-1.043-.07-.3-.248-.43-.573-.393-.308.034-.453.222-.385.556.205 1.197.974 1.77 2.333 1.77 1.745 0 2.47-.94 2.47-2.086z"/>
+              </svg>
+            </div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+
+          <!-- React -->
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="var(--burgundy)">
+                <path d="M24 10.7a6.2 6.2 0 0 0-3.3-4.8 17.5 17.5 0 0 0-4.6-1.5 6.6 6.6 0 0 0-1.8-3.4A6.1 6.1 0 0 0 9.8.3a17.6 17.6 0 0 0-2.3 4.2 6.5 6.5 0 0 0-5.1 1.5 6.1 6.1 0 0 0-2 4.7 17.6 17.6 0 0 0 1.5 4.6 6.5 6.5 0 0 0 3.3 5 6.1 6.1 0 0 0 4.5.7 17.6 17.6 0 0 0 2.3-4.2 6.5 6.5 0 0 0 5.1-1.5 6.1 6.1 0 0 0 2-4.7 17.6 17.6 0 0 0-1.5-4.6zm-12 3.8a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5z"/>
+              </svg>
+            </div>
+            <span class="skill-name">React</span>
+          </div>
+
+          <!-- PHP -->
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="var(--burgundy)">
+                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm3.5 14.5H12V17h-2v-2.5H6.5v-2H8v-3H6.5v-2H10V5h2v2.5h3.5v2H14v3h1.5v2z"/>
+              </svg>
+            </div>
+            <span class="skill-name">PHP</span>
+          </div>
+
+          <!-- Laravel -->
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="var(--burgundy)">
+                <path d="M5.617 0L1.75 2.232v19.536L5.617 24l3.867-2.232V2.232L5.617 0zm16.633 4.5l-3.867 2.232v9.536l3.867 2.232 3.867-2.232V6.732L22.25 4.5z"/>
+              </svg>
+            </div>
+            <span class="skill-name">Laravel</span>
+          </div>
+
+          <!-- MySQL -->
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="var(--burgundy)">
+                <path d="M12 0C5.373 0 0 2.238 0 5v14c0 2.762 5.373 5 12 5s12-2.238 12-5V5c0-2.762-5.373-5-12-5zm0 3c4.97 0 9 1.343 9 3s-4.03 3-9 3-9-1.343-9-3 4.03-3 9-3zm0 18c-4.97 0-9-1.343-9-3v-3.5c1.86 1.48 5.16 2.5 9 2.5s7.14-1.02 9-2.5V18c0 1.657-4.03 3-9 3z"/>
+              </svg>
+            </div>
+            <span class="skill-name">MySQL</span>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="var(--burgundy)">
+                <path d="M12 0C8.5 4.5 6 9.5 6 13.5c0 3.3 2.7 6 6 6s6-2.7 6-6C18 9.5 15.5 4.5 12 0zm0 17.5c-2.2 0-4-1.8-4-4 0-2.8 1.8-6.5 4-10 2.2 3.5 4 7.2 4 10 0 2.2-1.8 4-4 4z"/>
+              </svg>
+            </div>
+            <span class="skill-name">MongoDB</span>
+          </div>
+
+          <!-- GitHub -->
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="var(--burgundy)">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.74.084-.73.084-.73 1.205.08 1.838 1.24 1.838 1.24 1.07 1.83 2.809 1.3 3.495.99.108-.78.417-1.31.76-1.6-2.665-.3-5.466-1.33-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.3-.54-1.52.105-3.17 0 0 1.005-.32 3.3 1.23.96-.26 1.98-.39 3-.4 1.02.01 2.04.14 3 .4 2.28-1.55 3.285-1.23 3.285-1.23.645 1.65.24 2.87.12 3.17.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.62-5.475 5.92.42.36.81 1.1 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.09 24 17.59 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <span class="skill-name">GitHub</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED PROJECTS SECTION -->
+    <section id="projects" class="projects scroll-reveal">
+      <div class="projects-container">
+        <div class="projects-header">
+          <span class="section-label" data-lang="fr">03 / MON PORTFOLIO</span>
+          <span class="section-label" data-lang="en">03 / MY PORTFOLIO</span>
+          
+          <h2 class="section-title" data-lang="fr">PROJETS SÉLECTIONNÉS</h2>
+          <h2 class="section-title" data-lang="en">SELECTED PROJECTS</h2>
+          
+          <p class="section-subtitle" data-lang="fr">
+            Projets réalisés dans le cadre de mon apprentissage personnel, de mes stages et de mes travaux académiques.
+          </p>
+          <p class="section-subtitle" data-lang="en">
+            Projects created through personal learning, internship experience and academic work.
+          </p>
+        </div>
+        
+        <!-- Target container for Javascript dynamic rendering -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Populated by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES & PRICING SECTION -->
+    <section id="services" class="services scroll-reveal">
+      <div class="services-container">
+        <div class="services-header">
+          <span class="section-label" data-lang="fr">04 / SOLUTIONS</span>
+          <span class="section-label" data-lang="en">04 / SOLUTIONS</span>
+          
+          <h2 class="section-title">SERVICES</h2>
+          
+          <p class="section-subtitle" data-lang="fr">
+            Des solutions web simples et adaptées aux besoins des particuliers, petites entreprises et projets personnels.
+          </p>
+          <p class="section-subtitle" data-lang="en">
+            Simple and tailored web solutions for individuals, small businesses and personal projects.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Service 1: Landing Page -->
+          <div class="pricing-card">
+            <div class="card-header">
+              <h3 class="service-title">LANDING PAGE</h3>
+              <div class="price-box">
+                <span class="price-label" data-lang="fr">À partir de</span>
+                <span class="price-label" data-lang="en">Starting at</span>
+                <span class="price-amount">500 DH</span>
+              </div>
+            </div>
+            <ul class="service-features">
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Site d'une seule page</span>
+                <span data-lang="en">One-page website</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Design réactif (Mobile/Tablette/PC)</span>
+                <span data-lang="en">Responsive design</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Interface moderne</span>
+                <span data-lang="en">Modern UI</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Formulaire / Section d'appel à l'action</span>
+                <span data-lang="en">Contact / CTA section</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Animations légères</span>
+                <span data-lang="en">Basic animations</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-card">
+              <span data-lang="fr">DISCUTER DE VOTRE PROJET</span>
+              <span data-lang="en">DISCUSS YOUR PROJECT</span>
+            </a>
+          </div>
+
+          <!-- Service 2: Site Vitrine -->
+          <div class="pricing-card featured">
+            <span class="badge" data-lang="fr">POPULAIRE</span>
+            <span class="badge" data-lang="en">POPULAR</span>
+            
+            <div class="card-header">
+              <h3 class="service-title">SITE VITRINE</h3>
+              <div class="price-box">
+                <span class="price-label" data-lang="fr">À partir de</span>
+                <span class="price-label" data-lang="en">Starting at</span>
+                <span class="price-amount">1 000 DH</span>
+              </div>
+            </div>
+            <ul class="service-features">
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Site multi-pages</span>
+                <span data-lang="en">Multi-section website</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Design réactif</span>
+                <span data-lang="en">Responsive design</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Présentation, services et contact</span>
+                <span data-lang="en">About / Services / Contact</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Interface moderne et élégante</span>
+                <span data-lang="en">Modern interface</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Animations subtiles</span>
+                <span data-lang="en">Basic animations</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Aide à l'hébergement &amp; déploiement</span>
+                <span data-lang="en">Deployment assistance</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-card featured-btn">
+              <span data-lang="fr">DISCUTER DE VOTRE PROJET</span>
+              <span data-lang="en">DISCUSS YOUR PROJECT</span>
+            </a>
+          </div>
+
+          <!-- Service 3: Site E-commerce -->
+          <div class="pricing-card">
+            <div class="card-header">
+              <h3 class="service-title" data-lang="fr">SITE E-COMMERCE</h3>
+              <h3 class="service-title" data-lang="en">E-COMMERCE WEBSITE</h3>
+              <div class="price-box">
+                <span class="price-label" data-lang="fr">À partir de</span>
+                <span class="price-label" data-lang="en">Starting at</span>
+                <span class="price-amount">1500 DH</span>
+              </div>
+            </div>
+            <ul class="service-features">
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Catalogue de produits &amp; catégories</span>
+                <span data-lang="en">Products &amp; categories catalog</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Gestion du panier et des commandes</span>
+                <span data-lang="en">Shopping cart &amp; checkout</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Options de livraison et de contact</span>
+                <span data-lang="en">Shipping &amp; contact setup</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Tableau de bord d'administration complet</span>
+                <span data-lang="en">Complete admin dashboard</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Design moderne et 100% réactif</span>
+                <span data-lang="en">Modern and responsive design</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-card">
+              <span data-lang="fr">DEMANDER UN DEVIS</span>
+              <span data-lang="en">REQUEST A QUOTE</span>
+            </a>
+          </div>
+
+          <!-- Service 4: Design au Choix -->
+          <div class="pricing-card">
+            <div class="card-header">
+              <h3 class="service-title" data-lang="fr">DESIGN AU CHOIX</h3>
+              <h3 class="service-title" data-lang="en">CUSTOM DESIGN</h3>
+              <div class="service-subtitle-caption" style="margin-top: -0.4rem; margin-bottom: 0.8rem; font-size: 0.82rem; opacity: 0.8; font-family: var(--font-sans);">
+                <span data-lang="fr">Affiche publicitaire / Carte visite</span>
+                <span data-lang="en">Promo poster / Business card</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label" data-lang="fr">À partir de</span>
+                <span class="price-label" data-lang="en">Starting at</span>
+                <span class="price-amount">400 DH</span>
+              </div>
+            </div>
+            <ul class="service-features">
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Affiches publicitaires de qualité</span>
+                <span data-lang="en">High-quality promo posters</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Cartes de visite professionnelles</span>
+                <span data-lang="en">Professional business cards</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Design graphique personnalisé</span>
+                <span data-lang="en">Tailored graphic layouts</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Fichiers HD prêts pour impression</span>
+                <span data-lang="en">HD print-ready final source files</span>
+              </li>
+              <li>
+                <svg class="feature-icon" viewBox="0 0 24 24" width="16" height="16" fill="var(--burgundy)">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span data-lang="fr">Formats adaptés aux réseaux sociaux</span>
+                <span data-lang="en">Social media optimized formats</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-card">
+              <span data-lang="fr">DEMANDER UN DEVIS</span>
+              <span data-lang="en">REQUEST A QUOTE</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="pricing-disclaimer" data-lang="fr">
+          Les tarifs sont indicatifs et peuvent varier selon les besoins et la complexité du projet.
+        </p>
+        <p class="pricing-disclaimer" data-lang="en">
+          Prices are indicative and may vary according to the needs and complexity of the project.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section id="process" class="process scroll-reveal">
+      <div class="process-container">
+        <div class="process-header">
+          <span class="section-label" data-lang="fr">05 / MA MÉTHODE</span>
+          <span class="section-label" data-lang="en">05 / HOW I WORK</span>
+          
+          <h2 class="section-title" data-lang="fr">MON PROCESSUS</h2>
+          <h2 class="section-title" data-lang="en">MY PROCESS</h2>
+        </div>
+
+        <div class="process-grid">
+          <!-- Step 1 -->
+          <div class="process-card">
+            <span class="process-num">01</span>
+            
+            <h3 class="process-name" data-lang="fr">DÉCOUVRIR</h3>
+            <h3 class="process-name" data-lang="en">DISCOVER</h3>
+            
+            <p class="process-desc" data-lang="fr">
+              Comprendre l'idée, les objectifs et les exigences de votre projet.
+            </p>
+            <p class="process-desc" data-lang="en">
+              Understanding the idea, objectives and requirements of your project.
+            </p>
+          </div>
+          <!-- Step 2 -->
+          <div class="process-card">
+            <span class="process-num">02</span>
+            
+            <h3 class="process-name" data-lang="fr">PLANIFIER</h3>
+            <h3 class="process-name" data-lang="en">PLAN</h3>
+            
+            <p class="process-desc" data-lang="fr">
+              Définir la structure, la hiérarchie du contenu et l'approche technique.
+            </p>
+            <p class="process-desc" data-lang="en">
+              Defining the structure, content hierarchy and technical approach.
+            </p>
+          </div>
+          <!-- Step 3 -->
+          <div class="process-card">
+            <span class="process-num">03</span>
+            
+            <h3 class="process-name" data-lang="fr">CONCEVOIR</h3>
+            <h3 class="process-name" data-lang="en">DESIGN</h3>
+            
+            <p class="process-desc" data-lang="fr">
+              Créer la direction visuelle, l'espacement soigné et des interfaces intuitives.
+            </p>
+            <p class="process-desc" data-lang="en">
+              Creating the visual direction, clean spacing and intuitive interfaces.
+            </p>
+          </div>
+          <!-- Step 4 -->
+          <div class="process-card">
+            <span class="process-num">04</span>
+            
+            <h3 class="process-name" data-lang="fr">DÉVELOPPER</h3>
+            <h3 class="process-name" data-lang="en">DEVELOP</h3>
+            
+            <p class="process-desc" data-lang="fr">
+              Créer le site web réactif et écrire un code sémantique et performant.
+            </p>
+            <p class="process-desc" data-lang="en">
+              Building the responsive website and writing semantic, performant code.
+            </p>
+          </div>
+          <!-- Step 5 -->
+          <div class="process-card">
+            <span class="process-num">05</span>
+            
+            <h3 class="process-name" data-lang="fr">LIVRER</h3>
+            <h3 class="process-name" data-lang="en">DELIVER</h3>
+            
+            <p class="process-desc" data-lang="fr">
+              Tests approfondis, vérifications de réactivité et déploiement du site.
+            </p>
+            <p class="process-desc" data-lang="en">
+              Thorough testing, responsiveness checks and deploying your site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB CTA SECTION -->
+    <section class="github-cta scroll-reveal">
+      <div class="github-cta-container">
+        <div class="github-cta-content">
+          <div class="github-icon-large">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="var(--cream)">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          
+          <h2 class="github-title" data-lang="fr">EXPLORER MON CODE</h2>
+          <h2 class="github-title" data-lang="en">EXPLORE MY CODE</h2>
+          
+          <p class="github-text" data-lang="fr">
+            Vous voulez voir comment je construis mes projets ? Explorez mes dépôts sur GitHub pour voir mon code propre, sémantique et moderne.
+          </p>
+          <p class="github-text" data-lang="en">
+            Want to see how I build my projects? Explore my repositories on GitHub to see clean structuring, semantic markup, and modern practices.
+          </p>
+          
+          <a href="https://github.com/kettayfi-05" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-github">
+            <span data-lang="fr">VISITER MON GITHUB &rarr;</span>
+            <span data-lang="en">VISIT MY GITHUB &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact scroll-reveal">
+      <div class="contact-container">
+        
+        <!-- Left: Details and direct links -->
+        <div class="contact-info">
+          <span class="section-label" data-lang="fr">06 / DISCUTONS</span>
+          <span class="section-label" data-lang="en">06 / LET'S TALK</span>
+          
+          <h2 class="section-title" data-lang="fr">CRÉONS QUELQUE CHOSE</h2>
+          <h2 class="section-title" data-lang="en">LET’S CREATE SOMETHING</h2>
+          
+          <p class="contact-subtitle" data-lang="fr">
+            Vous avez une idée de projet ou besoin d'un site web ? J'aimerais beaucoup en discuter. Contactez-moi directement ou utilisez le formulaire.
+          </p>
+          <p class="contact-subtitle" data-lang="en">
+            Have a project idea or need a website? I’d love to hear about it. Feel free to contact me directly or use the form.
+          </p>
+
+          <div class="contact-methods">
+            <!-- Email -->
+            <div class="method-item">
+              <div class="method-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--burgundy)">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </div>
+              <div class="method-detail">
+                <span class="method-label">EMAIL</span>
+                <a href="mailto:ettayfikhawla@gmail.com" class="method-link">ettayfikhawla@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="method-item">
+              <div class="method-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--burgundy)">
+                  <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                </svg>
+              </div>
+              <div class="method-detail">
+                <span class="method-label">GITHUB</span>
+                <a href="https://github.com/kettayfi-05" target="_blank" rel="noopener noreferrer" class="method-link">github.com/kettayfi-05</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="method-item">
+              <div class="method-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--burgundy)">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <div class="method-detail">
+                <span class="method-label" data-lang="fr">LOCALISATION</span>
+                <span class="method-label" data-lang="en">LOCATION</span>
+                <span class="method-link" data-lang="fr">Maroc</span>
+                <span class="method-link" data-lang="en">Morocco</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Right: Modern clean contact form -->
+        <div class="contact-form-box">
+          <form class="contact-form" id="contact-form" novalidate>
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <!-- Sujet personnalisé pour l'e-mail -->
+            <input type="hidden" name="subject" value="Nouveau message de votre Portfolio">
+            <!-- Nom de l'expéditeur affiché -->
+            <input type="hidden" name="from_name" value="Portfolio Contact">
+            <div class="form-group">
+              <label for="form-name">
+                <span data-lang="fr">NOM COMPLET *</span>
+                <span data-lang="en">FULL NAME *</span>
+              </label>
+              <input type="text" id="form-name" name="name" required placeholder="Votre nom complet" data-placeholder-fr="Votre nom complet" data-placeholder-en="Your full name">
+              <span class="form-error" id="error-name">
+                <span data-lang="fr">Ce champ est requis.</span>
+                <span data-lang="en">This field is required.</span>
+              </span>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email">EMAIL *</label>
+              <input type="email" id="form-email" name="email" required placeholder="votre.email@exemple.com" data-placeholder-fr="votre.email@exemple.com" data-placeholder-en="your.email@example.com">
+              <span class="form-error" id="error-email">
+                <span data-lang="fr">Veuillez entrer un email valide.</span>
+                <span data-lang="en">Please enter a valid email.</span>
+              </span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject">
+                <span data-lang="fr">SUJET *</span>
+                <span data-lang="en">SUBJECT *</span>
+              </label>
+              <input type="text" id="form-subject" name="subject" required placeholder="Sujet de votre message" data-placeholder-fr="Sujet de votre message" data-placeholder-en="Subject of your message">
+              <span class="form-error" id="error-subject">
+                <span data-lang="fr">Ce champ est requis.</span>
+                <span data-lang="en">This field is required.</span>
+              </span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">MESSAGE *</label>
+              <textarea id="form-message" name="message" rows="5" required placeholder="Comment puis-je vous aider ?" data-placeholder-fr="Comment puis-je vous aider ?" data-placeholder-en="How can I help you?"></textarea>
+              <span class="form-error" id="error-message">
+                <span data-lang="fr">Ce champ est requis.</span>
+                <span data-lang="en">This field is required.</span>
+              </span>
+            </div>
+
+            <!-- Form messages -->
+            <div class="form-message-status success-message" id="form-success">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--burgundy)">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              <span data-lang="fr">Votre message a été envoyé avec succès ! Merci.</span>
+              <span data-lang="en">Your message has been sent successfully! Thank you.</span>
+            </div>
+
+            <div class="form-message-status error-message" id="form-fail">
+              <span data-lang="fr">Une erreur s'est produite lors de l'envoi. Veuillez réessayer.</span>
+              <span data-lang="en">An error occurred during submission. Please try again.</span>
+            </div>
+
+            <button type="submit" class="btn btn-submit" id="btn-submit">
+              <span data-lang="fr">ENVOYER LE MESSAGE &rarr;</span>
+              <span data-lang="en">SEND MESSAGE &rarr;</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- MINIMALIST FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- Top Section -->
+      <div class="footer-top">
+        <!-- Left: Logo & Moto -->
+        <div class="footer-brand">
+          <span class="footer-logo">KE</span>
+          <p class="footer-moto" data-lang="fr">CONSTRUIRE DES EXPÉRIENCES NUMÉRIQUES AVEC CODE &amp; CRÉATIVITÉ.</p>
+          <p class="footer-moto" data-lang="en">BUILDING DIGITAL EXPERIENCES WITH CODE &amp; CREATIVITY.</p>
+        </div>
+
+        <!-- Center: Primary Coordinates -->
+        <div class="footer-coordinates">
+          <span class="footer-section-title" data-lang="fr">COORDONNÉES</span>
+          <span class="footer-section-title" data-lang="en">COORDINATES</span>
+          <a href="mailto:ettayfikhawla@gmail.com" class="footer-email">ettayfikhawla@gmail.com</a>
+          <span class="footer-location" data-lang="fr">Maroc</span>
+          <span class="footer-location" data-lang="en">Morocco</span>
+        </div>
+
+        <!-- Right: Social Connections -->
+        <div class="footer-socials">
+          <span class="footer-section-title" data-lang="fr">RÉSEAUX</span>
+          <span class="footer-section-title" data-lang="en">SOCIALS</span>
+          <ul class="footer-social-links">
+            <li><a href="https://github.com/kettayfi-05" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/ettayfi-khawla" target="_blank" rel="noopener noreferrer">LinkedIn (ETTAYFI KHAWLA)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 KE. TOUS DROITS RÉSERVÉS / ALL RIGHTS RESERVED.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Project Screenshots -->
+  <div id="project-lightbox" class="lightbox-modal">
+    <span class="lightbox-close" aria-label="Close zoomed view">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Zoomed project view">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <!-- Script for Interactions -->
+  <script src="script.js"></script>
+</body>
+</html>

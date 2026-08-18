@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <!-- Background Canvas -->
+  <rect width="600" height="400" fill="#FBF7F4"/>
+  
+  <!-- Browser Frame Wrapper -->
+  <rect x="20" y="20" width="560" height="360" rx="12" fill="#E8D8CE" opacity="0.3" stroke="#3B2F2A" stroke-width="1.5"/>
+  
+  <!-- Browser Header Bar -->
+  <line x1="20" y1="55" x2="580" y2="55" stroke="#3B2F2A" stroke-width="1.5"/>
+  <!-- Browser Buttons -->
+  <circle cx="45" cy="38" r="5" fill="#3B2F2A" opacity="0.8"/>
+  <circle cx="60" cy="38" r="5" fill="#3B2F2A" opacity="0.5"/>
+  <circle cx="75" cy="38" r="5" fill="#3B2F2A" opacity="0.3"/>
+  <!-- Web URL Mock -->
+  <rect x="110" y="28" width="380" height="20" rx="10" fill="#FBF7F4" opacity="0.8"/>
+  <text x="300" y="41" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.7" text-anchor="middle" letter-spacing="1">drivenow.com/rentals</text>
+
+  <!-- Sidebar Mock -->
+  <line x1="160" y1="55" x2="160" y2="380" stroke="#3B2F2A" stroke-width="1.5"/>
+  <rect x="35" y="80" width="90" height="15" rx="4.5" fill="#3B2F2A" opacity="0.8"/>
+  <rect x="35" y="115" width="90" height="8" rx="4" fill="#3B2F2A" opacity="0.3"/>
+  <rect x="35" y="140" width="90" height="8" rx="4" fill="#3B2F2A" opacity="0.3"/>
+  <rect x="35" y="165" width="90" height="8" rx="4" fill="#3B2F2A" opacity="0.3"/>
+
+  <!-- Main Content Area: Car Rental Catalogue -->
+  <text x="185" y="90" font-family="'Cormorant Garamond', serif" font-size="18" font-weight="600" fill="#3B2F2A">DISPONIBLES IMMÉDIATEMENT</text>
+  
+  <!-- Car Item 1 -->
+  <g transform="translate(185, 115)">
+    <rect width="180" height="110" rx="8" fill="#B98F88" opacity="0.3" stroke="#3B2F2A" stroke-width="1"/>
+    
+    <!-- Abstract Car Shape (Sedan outline) -->
+    <path d="M 30 70 L 40 50 Q 55 45 80 45 L 110 45 Q 125 45 135 60 L 150 70 Z" fill="none" stroke="#3B2F2A" stroke-width="1.5"/>
+    <circle cx="50" cy="75" r="8" fill="#FBF7F4" stroke="#3B2F2A" stroke-width="1.25"/>
+    <circle cx="130" cy="75" r="8" fill="#FBF7F4" stroke="#3B2F2A" stroke-width="1.25"/>
+    
+    <text x="15" y="25" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#3B2F2A">Berline Confort</text>
+    <text x="15" y="95" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.8">350 DH / jour</text>
+  </g>
+  
+  <!-- Car Item 2 -->
+  <g transform="translate(380, 115)">
+    <rect width="180" height="110" rx="8" fill="#E8D8CE" opacity="0.5" stroke="#3B2F2A" stroke-width="1"/>
+    
+    <!-- Abstract Car Shape (SUV outline) -->
+    <path d="M 25 70 L 30 45 Q 50 40 85 40 L 125 40 Q 140 40 145 60 L 155 70 Z" fill="none" stroke="#3B2F2A" stroke-width="1.5"/>
+    <circle cx="50" cy="75" r="8" fill="#FBF7F4" stroke="#3B2F2A" stroke-width="1.25"/>
+    <circle cx="130" cy="75" r="8" fill="#FBF7F4" stroke="#3B2F2A" stroke-width="1.25"/>
+    
+    <text x="15" y="25" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#3B2F2A">SUV Premium</text>
+    <text x="15" y="95" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.8">550 DH / jour</text>
+  </g>
+
+  <!-- Car Item 3 (Bottom Left) -->
+  <g transform="translate(185, 240)">
+    <rect width="180" height="110" rx="8" fill="#E8D8CE" opacity="0.5" stroke="#3B2F2A" stroke-width="1"/>
+    
+    <!-- Abstract Car Shape (Compact hatch outline) -->
+    <path d="M 30 70 L 40 55 Q 60 50 90 50 L 120 50 L 140 70 Z" fill="none" stroke="#3B2F2A" stroke-width="1.5"/>
+    <circle cx="50" cy="75" r="8" fill="#FBF7F4" stroke="#3B2F2A" stroke-width="1.25"/>
+    <circle cx="120" cy="75" r="8" fill="#FBF7F4" stroke="#3B2F2A" stroke-width="1.25"/>
+    
+    <text x="15" y="25" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#3B2F2A">Citadine Électrique</text>
+    <text x="15" y="95" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.8">250 DH / jour</text>
+  </g>
+
+  <!-- Car Item 4 (Bottom Right) -->
+  <g transform="translate(380, 240)">
+    <rect width="180" height="110" rx="8" fill="#B98F88" opacity="0.3" stroke="#3B2F2A" stroke-width="1"/>
+    
+    <!-- Abstract Car Shape (Sport Coupe outline) -->
+    <path d="M 25 70 L 45 60 Q 65 40 100 40 L 120 40 Q 135 40 145 55 L 155 70 Z" fill="none" stroke="#3B2F2A" stroke-width="1.5"/>
+    <circle cx="55" cy="75" r="8" fill="#FBF7F4" stroke="#3B2F2A" stroke-width="1.25"/>
+    <circle cx="125" cy="75" r="8" fill="#FBF7F4" stroke="#3B2F2A" stroke-width="1.25"/>
+    
+    <text x="15" y="25" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#3B2F2A">Cabriolet Sport</text>
+    <text x="15" y="95" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.8">700 DH / jour</text>
+  </g>
+</svg>

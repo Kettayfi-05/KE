@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <!-- Background Canvas -->
+  <rect width="600" height="400" fill="#FBF7F4"/>
+  
+  <!-- Browser Frame Wrapper -->
+  <rect x="20" y="20" width="560" height="360" rx="12" fill="#E8D8CE" opacity="0.3" stroke="#3B2F2A" stroke-width="1.5"/>
+  
+  <!-- Browser Header Bar -->
+  <line x1="20" y1="55" x2="580" y2="55" stroke="#3B2F2A" stroke-width="1.5"/>
+  <!-- Browser Buttons -->
+  <circle cx="45" cy="38" r="5" fill="#3B2F2A" opacity="0.8"/>
+  <circle cx="60" cy="38" r="5" fill="#3B2F2A" opacity="0.5"/>
+  <circle cx="75" cy="38" r="5" fill="#3B2F2A" opacity="0.3"/>
+  <!-- Web URL Mock -->
+  <rect x="110" y="28" width="380" height="20" rx="10" fill="#FBF7F4" opacity="0.8"/>
+  <text x="300" y="41" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.7" text-anchor="middle" letter-spacing="1">brave-energy.ma/store</text>
+
+  <!-- Sidebar Mock -->
+  <line x1="160" y1="55" x2="160" y2="380" stroke="#3B2F2A" stroke-width="1.5"/>
+  <rect x="35" y="80" width="90" height="15" rx="4.5" fill="#3B2F2A" opacity="0.8"/>
+  <rect x="35" y="115" width="90" height="8" rx="4" fill="#3B2F2A" opacity="0.3"/>
+  <rect x="35" y="140" width="90" height="8" rx="4" fill="#3B2F2A" opacity="0.3"/>
+  <rect x="35" y="165" width="90" height="8" rx="4" fill="#3B2F2A" opacity="0.3"/>
+
+  <!-- Main Content Area: Electrical Materials Catalog -->
+  <text x="185" y="90" font-family="'Cormorant Garamond', serif" font-size="18" font-weight="600" fill="#3B2F2A">MATÉRIELS &amp; COMPOSANTS ÉLECTRIQUES</text>
+  
+  <!-- Product Item 1 -->
+  <g transform="translate(185, 115)">
+    <rect width="180" height="110" rx="8" fill="#B98F88" opacity="0.3" stroke="#3B2F2A" stroke-width="1"/>
+    
+    <!-- Lightbulb Vector Graphic -->
+    <path d="M 90 40 C 75 40 70 55 70 65 C 70 80 80 85 80 90 L 100 90 C 100 85 110 80 110 65 C 110 55 105 40 90 40 Z" fill="none" stroke="#3B2F2A" stroke-width="1.5"/>
+    <rect x="83" y="90" width="14" height="6" rx="1" fill="#FBF7F4" stroke="#3B2F2A" stroke-width="1.25"/>
+    <line x1="90" y1="40" x2="90" y2="33" stroke="#3B2F2A" stroke-width="1.25"/>
+    
+    <text x="15" y="25" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#3B2F2A">Projecteur LED 50W</text>
+    <text x="15" y="100" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.8">180 DH / unité</text>
+  </g>
+  
+  <!-- Product Item 2 -->
+  <g transform="translate(380, 115)">
+    <rect width="180" height="110" rx="8" fill="#E8D8CE" opacity="0.5" stroke="#3B2F2A" stroke-width="1"/>
+    
+    <!-- Power/Energy Lightning Graphic -->
+    <path d="M 95 35 L 75 65 L 93 65 L 85 95 L 110 60 L 92 60 Z" fill="none" stroke="#3B2F2A" stroke-width="1.5" stroke-linejoin="round"/>
+    
+    <text x="15" y="25" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#3B2F2A">Disjoncteur Différentiel</text>
+    <text x="15" y="100" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.8">240 DH / unité</text>
+  </g>
+
+  <!-- Product Item 3 (Bottom Left) -->
+  <g transform="translate(185, 240)">
+    <rect width="180" height="110" rx="8" fill="#E8D8CE" opacity="0.5" stroke="#3B2F2A" stroke-width="1"/>
+    
+    <!-- Cable Spool Graphic -->
+    <ellipse cx="90" cy="65" rx="25" ry="12" fill="none" stroke="#3B2F2A" stroke-width="1.5"/>
+    <ellipse cx="90" cy="72" rx="25" ry="12" fill="none" stroke="#3B2F2A" stroke-width="1.5"/>
+    <line x1="65" y1="65" x2="65" y2="72" stroke="#3B2F2A" stroke-width="1.5"/>
+    <line x1="115" y1="65" x2="115" y2="72" stroke="#3B2F2A" stroke-width="1.5"/>
+    
+    <text x="15" y="25" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#3B2F2A">Câble Électrique 2.5mm</text>
+    <text x="15" y="100" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.8">320 DH / rouleau</text>
+  </g>
+
+  <!-- Product Item 4 (Bottom Right) -->
+  <g transform="translate(380, 240)">
+    <rect width="180" height="110" rx="8" fill="#B98F88" opacity="0.3" stroke="#3B2F2A" stroke-width="1"/>
+    
+    <!-- Wall Switch Graphic -->
+    <rect x="75" y="45" width="30" height="40" rx="4" fill="none" stroke="#3B2F2A" stroke-width="1.5"/>
+    <line x1="90" y1="45" x2="90" y2="85" stroke="#3B2F2A" stroke-width="0.75" stroke-dasharray="2,2"/>
+    <path d="M 85 60 L 95 70" stroke="#3B2F2A" stroke-width="1.5"/>
+    
+    <text x="15" y="25" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#3B2F2A">Interrupteur Va-et-vient</text>
+    <text x="15" y="100" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.8">35 DH / unité</text>
+  </g>
+</svg>

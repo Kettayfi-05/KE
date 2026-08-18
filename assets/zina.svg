@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <!-- Background Canvas -->
+  <rect width="600" height="400" fill="#FBF7F4"/>
+  
+  <!-- Browser Frame Wrapper -->
+  <rect x="20" y="20" width="560" height="360" rx="12" fill="#E8D8CE" opacity="0.3" stroke="#3B2F2A" stroke-width="1.5"/>
+  
+  <!-- Browser Header Bar -->
+  <line x1="20" y1="55" x2="580" y2="55" stroke="#3B2F2A" stroke-width="1.5"/>
+  <!-- Browser Buttons -->
+  <circle cx="45" cy="38" r="5" fill="#3B2F2A" opacity="0.8"/>
+  <circle cx="60" cy="38" r="5" fill="#3B2F2A" opacity="0.5"/>
+  <circle cx="75" cy="38" r="5" fill="#3B2F2A" opacity="0.3"/>
+  <!-- Web URL Mock -->
+  <rect x="110" y="28" width="380" height="20" rx="10" fill="#FBF7F4" opacity="0.8"/>
+  <text x="300" y="42" font-family="'Inter', sans-serif" font-size="9" fill="#3B2F2A" opacity="0.7" text-anchor="middle" letter-spacing="1">zina-boutique.com</text>
+
+  <!-- Mock Product Details (Editorial E-commerce style) -->
+  <!-- Left Side: Styled image display -->
+  <g transform="translate(50, 80)">
+    <!-- Arched image box -->
+    <path d="M 0 200 A 90 90 0 0 1 180 200 Z" fill="#B98F88" opacity="0.6"/>
+    <rect x="0" y="200" width="180" height="60" fill="#B98F88" opacity="0.6"/>
+    <path d="M 0 200 A 90 90 0 0 1 180 200 Z" fill="none" stroke="#3B2F2A" stroke-width="1.5"/>
+    <rect x="0" y="200" width="180" height="60" fill="none" stroke="#3B2F2A" stroke-width="1.5"/>
+    
+    <!-- Abstract Jewel/Flower Line Art on Mock Image -->
+    <path d="M 90 140 C 90 140 60 180 90 220 C 120 180 90 140 90 140" fill="none" stroke="#3B2F2A" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="90" cy="180" r="10" fill="#FBF7F4"/>
+    <circle cx="90" cy="180" r="10" fill="none" stroke="#3B2F2A" stroke-width="1.5"/>
+  </g>
+
+  <!-- Right Side: E-commerce Typography -->
+  <g transform="translate(280, 110)">
+    <!-- Shop Title -->
+    <text x="0" y="30" font-family="'Cormorant Garamond', serif" font-size="36" font-weight="600" fill="#3B2F2A" letter-spacing="2">Z I N A</text>
+    <text x="0" y="55" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#3B2F2A" opacity="0.6" letter-spacing="3">COLLECTION CRÉATIVE</text>
+    
+    <!-- Short body text mock -->
+    <line x1="0" y1="85" x2="250" y2="85" stroke="#3B2F2A" stroke-width="1" opacity="0.5"/>
+    <rect x="0" y="105" width="220" height="6" rx="3" fill="#3B2F2A" opacity="0.2"/>
+    <rect x="0" y="120" width="180" height="6" rx="3" fill="#3B2F2A" opacity="0.2"/>
+    <rect x="0" y="135" width="140" height="6" rx="3" fill="#3B2F2A" opacity="0.2"/>
+    
+    <!-- Price & Button mockup -->
+    <text x="0" y="190" font-family="'Cormorant Garamond', serif" font-weight="bold" font-size="22" fill="#3B2F2A">450 DH</text>
+    <rect x="110" y="170" width="120" height="30" rx="15" fill="#3B2F2A"/>
+    <text x="170" y="189" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#FBF7F4" text-anchor="middle" letter-spacing="1">DÉCOUVRIR</text>
+  </g>
+  
+  <!-- Subtle sparkles -->
+  <path d="M 500 85 Q 507 85 507 78 Q 507 85 514 85 Q 507 85 507 92 Q 507 85 500 85 Z" fill="#3B2F2A"/>
+</svg>

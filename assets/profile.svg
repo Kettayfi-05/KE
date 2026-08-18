@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <!-- Definitions for gradients/clips -->
+  <defs>
+    <clipPath id="arch-clip">
+      <rect x="50" y="50" width="500" height="700" rx="250" fill="none"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="800" fill="#FBF7F4"/>
+
+  <!-- Main Arch Frame -->
+  <g clip-path="url(#arch-clip)">
+    <!-- Arch Background -->
+    <rect x="50" y="50" width="500" height="700" fill="#E8D8CE" opacity="0.6"/>
+    
+    <!-- Sophisticated Abstract Shapes Inside Arch -->
+    <circle cx="300" cy="500" r="280" fill="#B98F88" opacity="0.4"/>
+    <circle cx="150" cy="280" r="180" fill="#FBF7F4" opacity="0.7"/>
+    
+    <!-- Minimalist Botanical Line Art (Stem & Leaves) -->
+    <path d="M 300 750 Q 300 450 420 300" fill="none" stroke="#3B2F2A" stroke-width="2" stroke-linecap="round"/>
+    <!-- Leaf 1 -->
+    <path d="M 300 650 Q 250 630 260 600 Q 290 610 306 637" fill="#3B2F2A" opacity="0.9"/>
+    <!-- Leaf 2 -->
+    <path d="M 320 580 Q 380 570 370 540 Q 340 550 326 570" fill="#3B2F2A" opacity="0.9"/>
+    <!-- Leaf 3 -->
+    <path d="M 330 480 Q 270 450 280 420 Q 310 430 334 468" fill="#3B2F2A" opacity="0.9"/>
+    <!-- Leaf 4 -->
+    <path d="M 355 420 Q 420 410 410 380 Q 380 390 364 410" fill="#3B2F2A" opacity="0.9"/>
+    <!-- Leaf 5 (Top leaf) -->
+    <path d="M 420 300 Q 430 250 410 240 Q 390 270 420 300" fill="#3B2F2A" opacity="0.9"/>
+
+    <!-- Subtle Silhouette Outline (Editorial Minimalist Face Outline) -->
+    <path d="M 120 750 C 120 620 180 500 230 480 C 210 450 190 410 190 360 C 190 260 270 200 350 240 C 330 260 320 290 320 320 C 320 350 340 370 340 390 C 330 400 300 395 285 410 C 275 420 278 435 265 445 C 255 450 240 440 235 460 C 230 480 260 520 260 550 C 260 620 200 700 200 750" fill="none" stroke="#3B2F2A" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+  </g>
+
+  <!-- Arched Outline Border -->
+  <rect x="50" y="50" width="500" height="700" rx="250" fill="none" stroke="#3B2F2A" stroke-width="2.5" opacity="0.85"/>
+
+  <!-- Editorial typography and details around the arch -->
+  <!-- 4-pointed stars (Sparkles) -->
+  <!-- Star 1 (Top Left) -->
+  <path d="M 80 180 Q 100 180 100 160 Q 100 180 120 180 Q 100 180 100 200 Q 100 180 80 180 Z" fill="#3B2F2A"/>
+  <!-- Star 2 (Bottom Right) -->
+  <path d="M 490 680 Q 505 680 505 665 Q 505 680 520 680 Q 505 680 505 695 Q 505 680 490 680 Z" fill="#B98F88"/>
+  <!-- Star 3 (Top Right) -->
+  <path d="M 490 120 Q 500 120 500 110 Q 500 120 510 120 Q 500 120 500 130 Q 500 120 490 120 Z" fill="#3B2F2A"/>
+
+  <!-- Minimal Circular Text path or curved line -->
+  <path id="curve" d="M 120 70 A 230 230 0 0 1 480 70" fill="none" stroke="none"/>
+  <text font-family="'Inter', sans-serif" font-size="10" font-weight="600" letter-spacing="4" fill="#3B2F2A" opacity="0.8">
+    <textPath href="#curve" startOffset="50%" text-anchor="middle">
+      CODE • DESIGN • CREATE
+    </textPath>
+  </text>
+</svg>
