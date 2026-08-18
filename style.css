@@ -449,6 +449,7 @@ body.lang-en [data-lang="fr"] {
   justify-content: center;
   align-items: center;
   position: relative;
+  top: -20px;
 }
 
 .arched-frame-wrapper {
@@ -520,6 +521,65 @@ body.lang-en [data-lang="fr"] {
   letter-spacing: 3px;
   color: var(--burgundy);
   opacity: 0.7;
+}
+
+/* Decorative floating flowers */
+.decor-flower {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  transition: transform var(--transition-medium);
+}
+.decor-flower.flower-1 {
+  top: 10%;
+  left: -30px;
+  width: 100px;
+  height: auto;
+  transform: rotate(-15deg);
+  animation: floatFlower1 6s ease-in-out infinite alternate;
+}
+.decor-flower.flower-2 {
+  bottom: 15%;
+  right: -60px;
+  width: 90px;
+  height: auto;
+  transform: rotate(20deg);
+  animation: floatFlower2 7s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatFlower1 {
+  0% {
+    transform: translateY(0) rotate(-15deg);
+  }
+  100% {
+    transform: translateY(-12px) rotate(-8deg);
+  }
+}
+
+@keyframes floatFlower2 {
+  0% {
+    transform: translateY(0) rotate(20deg);
+  }
+  100% {
+    transform: translateY(10px) rotate(25deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .decor-flower.flower-1 {
+    width: 70px;
+    left: -15px;
+  }
+  .decor-flower.flower-2 {
+    width: 60px;
+    right: -35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .decor-flower {
+    display: none;
+  }
 }
 
 @keyframes floatStar {
@@ -1687,7 +1747,7 @@ body.lang-en [data-lang="fr"] {
   border-top: 1px solid rgba(59, 47, 42, 0.08);
   padding-top: var(--space-md);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -1885,6 +1945,7 @@ body.lang-en [data-lang="fr"] {
   
   .hero-visual {
     order: -1; /* Image sits on top in portrait mobile */
+    top: 0;
   }
   
   .arched-frame-wrapper {
@@ -2088,4 +2149,49 @@ body.lang-en [data-lang="fr"] {
   font-family: var(--font-serif);
   font-size: 1.25rem;
   letter-spacing: 0.5px;
+}
+
+/* 19. SCROLL TO TOP BUTTON */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--burgundy);
+  color: var(--cream);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(59, 47, 42, 0.15);
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-to-top-btn:hover {
+  background-color: var(--dusty-pink);
+  transform: translateY(-4px) scale(1.05);
+}
+
+.scroll-to-top-btn:active {
+  transform: translateY(-2px) scale(0.98);
+}
+
+.scroll-to-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Hide on very small screens to avoid cluttering screen space */
+@media (max-width: 480px) {
+  .scroll-to-top-btn {
+    display: none;
+  }
 }
