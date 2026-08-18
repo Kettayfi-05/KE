@@ -287,18 +287,24 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = currentLang === 'fr' ? 'ENVOI EN COURS...' : 'SENDING...';
 
         const formData = new FormData(contactForm);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
 
         fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          body: formData
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
         })
         .then(async (response) => {
-          const json = await response.json();
+          const resJson = await response.json();
           if (response.status === 200) {
             successMsg.style.display = 'flex';
             contactForm.reset();
           } else {
-            console.error('Submission failed:', json);
+            console.error('Submission failed:', resJson);
             failMsg.style.display = 'block';
           }
         })
